@@ -15,6 +15,10 @@ server.use(express.json());
 
 server.use("/api", apiRouter);
 
+// server.get("/", (req, res) => {
+//   const data = db.list();
+// });
+
 server.use((req, res, next) => {
   console.log("<__body logger start____>");
   console.log(req.body);
